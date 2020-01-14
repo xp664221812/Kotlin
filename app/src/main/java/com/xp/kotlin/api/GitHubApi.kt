@@ -7,5 +7,5 @@ import retrofit2.http.Path
 interface GitHubApi {
 
     @GET("/repos/{owner}/{repo}")
-    fun getRepository(@Path("owner")owner:String,@Path("repo")repo:String ):Call<>
+    fun getRepository(@Path("owner")owner:String,@Path("repo")repo:String ):Call<Repository>
 }
